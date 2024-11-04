@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/entity/UserRoleEnum.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/test/junit/ArticleCategory/AddArticleCategoryTest.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/UploadArticleWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/entity/Article.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/db/ConnectDBTest.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/Dao/ArticleDao.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/ReviewArticleWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/CustomScrollBarUI.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/context/UserContext.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/MyArticleDetailWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/MyArticlesWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/test/junit/ArticleCategory/GetAllArticleCategoriesTest.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/SearchResultsWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/exception/ErrorCode.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/Dao/UserDao.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/Dao/ArticleCategoryDao.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/exception/BusinessException.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/HomeWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/ReadWindow.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/Dao/CategoryDao.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/AdminManagementPage.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/entity/User.java</file>
+            <file>file:/E:/JavaDesign(1)/JavaDesign/src/gui/UserWindow.java</file>
+        </group>
+    </open-files>
+</project-private>
