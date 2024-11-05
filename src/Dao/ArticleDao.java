@@ -14,7 +14,7 @@ import entity.Article;
  * @author 王陈宇科
  */
 public class ArticleDao {
-    public static final String URL = "jdbc:derby://localhost:1527/mydatabase;create=true";
+    public static final String URL = "jdbc:derby:.\\mydatabase;create=true";
 
     public static final String USERNAME = "root";
 

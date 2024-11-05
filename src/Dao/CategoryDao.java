@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CategoryDao {
-    public static final String URL = "jdbc:derby://localhost:1527/mydatabase;create=true";
+    public static final String URL = "jdbc:derby:.\\mydatabase;create=true";
 
     public static final String USERNAME = "root";
 

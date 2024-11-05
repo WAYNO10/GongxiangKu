@@ -30,13 +30,13 @@ public class UserTest {
 //           //从全局登录用户获取
 //        System.out.println("登录用户"+UserContext.getInstance().getCurrentUser());
 //            
-//        User addUser = new User();
-//        addUser.setPassword("123456");
-//        addUser.setUserName("Tom");
-//        addUser.setUserRole("user");
-//
-//        boolean result = UserService.addUser(addUser);
-//        System.out.println("用户添加"+result+addUser);
+        User addUser = new User();
+        addUser.setPassword("123456");
+        addUser.setUserName("keke");
+        addUser.setUserRole("admin");
+
+        boolean result = userDao.addUser(addUser);
+        System.out.println("用户添加"+result+addUser);
             
 //            boolean a = newUser.hasPermission("admin");
 //            System.out.println(a);

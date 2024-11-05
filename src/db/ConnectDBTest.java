@@ -12,7 +12,7 @@ import java.sql.*;
 public class ConnectDBTest {
     public static Connection conn;
 
-    public static final String URL = "jdbc:derby://localhost:1527/mydatabase;create=true";
+    public static final String URL = "jdbc:derby:mydatabase;create=true";
 
     public static final String USERNAME = "root";
 
@@ -37,17 +37,86 @@ public class ConnectDBTest {
             //statement对象
             statement = conn.createStatement();
             // 创建用户表
-            String createUsersTable = "CREATE TABLE article_category\n" +
+//            String createUsersTable = "CREATE TABLE article_category\n" +
+//"(\n" +
+//"    id  INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
+//"    article_id  INT NOT NULL,\n" +
+//"    category_id INT NOT NULL,\n" +
+//"    UNIQUE (article_id , category_id)\n" +
+//")";
+           
+            
+//            CREATE TABLE \"user\"
+//(
+//    userId INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+//    userName VARCHAR(50) NOT NULL,
+//    password VARCHAR(255) NOT NULL,
+//    userRole VARCHAR(10) CHECK (userRole IN ('user', 'admin', 'ban'))
+//);
+//
+//            String createUsersTable = "CREATE TABLE \"user\"\n" +
+//"(\n" +
+//"    userId INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
+//"    userName VARCHAR(50) NOT NULL,\n" +
+//"    password VARCHAR(255) NOT NULL,\n" +
+//"    userRole VARCHAR(10) CHECK (userRole IN ('user', 'admin', 'ban'))\n" +
+//")";
+
+//
+//-- 文章表
+//CREATE TABLE Articles
+//(
+//    id         INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+//    title      VARCHAR(255) NOT NULL,
+//    content    CLOB         NOT NULL,
+//    userId     INT          NOT NULL,
+//    updateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+//    createTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+//);
+//
+//           String createArticlesTable = "CREATE TABLE Articles\n" +
+//"(\n" +
+//"    id         INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
+//"    title      VARCHAR(255) NOT NULL,\n" +
+//"    content    CLOB         NOT NULL,\n" +
+//"    userId     INT          NOT NULL,\n" +
+//"    updateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n" +
+//"    createTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n" +
+//")";
+
+//-- 分类表
+//CREATE TABLE category
+//(
+//    id          INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+//    name        VARCHAR(255) NOT NULL UNIQUE,
+//    description ClOB
+//);
+//
+//String createCategoryTable = "CREATE TABLE category\n" +
+//"(\n" +
+//"    id          INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
+//"    name        VARCHAR(255) NOT NULL UNIQUE,\n" +
+//"    description CLOB\n" +
+//")";
+
+//-- 文章分类表
+//CREATE TABLE article_category
+//(
+//    id          INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+//    article_id  INT NOT NULL,
+//    category_id INT NOT NULL,
+//    UNIQUE (article_id, category_id)
+//);
+String createArticleCategoryTable = "CREATE TABLE article_category\n" +
 "(\n" +
-"    id  INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
+"    id          INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n" +
 "    article_id  INT NOT NULL,\n" +
 "    category_id INT NOT NULL,\n" +
-"    UNIQUE (article_id , category_id)\n" +
+"    UNIQUE (article_id, category_id)\n" +
 ")";
-           
 
             //执行sql
-            statement.execute(createUsersTable);
+            statement.execute(createArticleCategoryTable);
             System.out.println("创建用户表成功");
         } catch (SQLException e) {
             System.err.println("SQLException occurred.");
@@ -155,7 +224,9 @@ public class ConnectDBTest {
     public static void main(String[] args) throws SQLException {
         connectDB();
         
-        createDBTable(conn);
+        
+        
+//        createDBTable(conn);
         
 //        saveUser();
         
